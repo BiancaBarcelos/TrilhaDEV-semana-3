@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrilhaDEV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <div id="titulo">
+        <h1>TrilhaDEV</h1>
+        <h2>- Semana 3 -</h2>
+    </div>
+    <!-- Questão 1 -->
+    <section id="sessao1">
+        <h2>Calculadora</h2>
+        <p>Uma Super Calculadora programada via JavaScript, exercício proposto na TrilhaDEV do evento Floripa Mais Tec</p>
+        <div id="alinhamentoItens">
+            <div>
+                <p>Instruções de uso:</p>
+                <ol>
+                    <li>Insira o primeiro número</li>
+                    <li>Selecione a operador matemático</li>
+                    <li>Insira o segundo número</li>
+                    <li>Clique no botão "Calcular"</li>
+                    <li>Logo abaixo aparecerá seu resultado</li>
+                </ol>
+            </div>
+            <div>
+                <form>
+                    <label for="numero1"> O que você deseja Calcular? </label>
+                    <input class="formulario" type="number" id="numero1" name="numero1" placeholder="Insira o primeiro número">
+                    <select class="formulario" name="operadoresMatematicos" id="operadoresMatematicos">
+                        <option value="adicao">+</option>
+                        <option value="subtracao">-</option>
+                        <option value="divisao">/</option>
+                        <option value="multiplicacao">*</option>
+                    </select>
+                    <input class="formulario" type="number" id="numero2" name="numero2" placeholder="Insira o segundo número">
+                    <button class="btn" onclick="calcularConta(event)" type="submit">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <p id="frase"></p>
+    </section>
+
+    <!-- Questão 2 -->
+    <section id="sessao2">
+        <h2>Estoque Loja Dorama</h2>
+
+        <div id="alinhamentoMenu">
+            <div>
+                <p>Menu</p>
+                <ol>
+                    <li>Cadastrar Produto</li>
+                    <li>Listar Produtos</li>
+                    <li>Entrada de Estoque</li>
+                    <li>Saída de Estoque</li>
+                </ol>
+            </div>
+            <div>
+                <form action="">
+                    <label for="seleciona">Selecione a opção desejada</label>
+                    <input type="seleciona" class="seleciona" type="number" id="seleciona" placeholder="Informe o número">
+                    <button class="btn" onclick="selecionaOpcao(event)" type="submit">Selecionar</button>
+                </form>
+            </div>
+        </div>
+        <p id="fraseMenu"></p>
+    </section>
+
+    <!-- Questão 3 -->
+    <section id="sessao3">
+        <h2 class="title">Título</h2>
+    </section>
+
+    <!-- Questão 4 -->
+    <section>
+        <div class="card">
+            <h2>Style CSS</h2>
+            <p>com as regras descritas no exercício</p>
+        </div>
+    </section>
+
+    <!-- Logo -->
+    <div class="logo_bianca">
+        <img src="assets/logo.png" alt="">
+        <p>Bianca Barcelos</p>
+    </div>      
+
+    <script src="script.js"></script>
+</body>
+</html>
